@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Morning Meeting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1793993733">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span id="className">Our Class</span></div>
+    <div id="dateLine" class="date-line"></div>
+    <div id="clock" class="clock"></div>
+    <button id="penBtn" class="icon-btn" title="Draw on the screen" aria-label="Draw on the screen">✎</button>
+    <button id="fsBtn" class="icon-btn" title="Full screen" aria-label="Full screen">⛶</button>
+    <button id="gearBtn" class="icon-btn gear" title="Teacher settings" aria-label="Teacher settings">⚙️</button>
+  </header>
+
+  <main id="stage"></main>
+  <canvas id="ink" hidden></canvas>
+  <div id="inkBar" class="ink-bar" hidden>
+    <button data-color="#1d2433" class="ink-color on" style="background:#1d2433" aria-label="Black"></button>
+    <button data-color="#c74343" class="ink-color" style="background:#c74343" aria-label="Red"></button>
+    <button data-color="#2f5d8a" class="ink-color" style="background:#2f5d8a" aria-label="Blue"></button>
+    <button data-color="#2e8b57" class="ink-color" style="background:#2e8b57" aria-label="Green"></button>
+    <button data-color="#f4c95d" class="ink-color" style="background:#f4c95d" aria-label="Yellow"></button>
+    <button id="inkEraser" class="ink-tool">Eraser</button>
+    <button id="inkClear" class="ink-tool">Clear</button>
+    <button id="inkDone" class="ink-tool primary">Done drawing</button>
+  </div>
+
+  <footer class="bottom">
+    <button id="prevBtn" class="nav-btn" aria-label="Back">◀</button>
+    <nav id="tabs" class="tabs"></nav>
+    <button id="nextBtn" class="nav-btn" aria-label="Next">▶</button>
+  </footer>
+
+  <dialog id="teacher" class="teacher">
+    <div class="teacher-head">
+      <h2>⚙️ Teacher settings</h2>
+      <button id="closeTeacher" class="btn primary">Done</button>
+    </div>
+    <div id="teacherBody" class="teacher-body"></div>
+  </dialog>
+
+  <script src="js/core.js?v=1793993733"></script>
+  <script src="js/library.js?v=1793993733"></script>
+  <script src="js/icons.js?v=1793993733"></script>
+  <script src="js/art.js?v=1793993733"></script>
+  <!-- Stations: the order here is the starting order on the board. -->
+  <script src="js/modules/today.js?v=1793993733"></script>
+  <script src="js/modules/calendar.js?v=1793993733"></script>
+  <script src="js/modules/weather.js?v=1793993733"></script>
+  <script src="js/modules/season.js?v=1793993733"></script>
+  <script src="js/modules/feelings.js?v=1793993733"></script>
+  <script src="js/modules/schedule.js?v=1793993733"></script>
+  <script src="js/modules/games.js?v=1793993733"></script>
+  <script src="js/modules/lifeskills.js?v=1793993733"></script>
+  <script src="js/modules/extras.js?v=1793993733"></script>
+  <script src="js/modules/activity.js?v=1793993733"></script>
+  <script src="js/modules/people.js?v=1793993733"></script>
+  <script src="js/modules/video.js?v=1793993733"></script>
+  <script src="js/app.js?v=1793993733"></script>
+</body>
+</html>
